@@ -7,7 +7,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("applicationContext.xml")
+@ContextConfiguration("classpath:applicationContext.xml")
 public class TestSpring {
 
     @Test
@@ -16,6 +16,7 @@ public class TestSpring {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         DIExample diExample = context.getBean("DI1",DIExample.class);
         System.out.println(diExample.toString());
+        System.out.println("test测试");
 
     }
 
