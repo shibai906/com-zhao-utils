@@ -11,7 +11,6 @@ public class CherryPickDemo {
         System.out.println("F");
         System.out.println("E");
         System.out.println("G");
-        System.out.println("H");
     }
 
 }
